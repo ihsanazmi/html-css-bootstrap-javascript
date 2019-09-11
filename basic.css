@@ -1,0 +1,76 @@
+/* selector */
+/* 
+    h2: selector
+    color: properti
+    aquamarine: value
+*/
+
+/* untuk semua tag h2 */
+h2{
+    color: aquamarine
+}
+
+/* untuk semua tag p */
+p{
+    color: goldenrod
+}
+
+/* ID selector */
+#merah{
+    color: red
+}
+
+/* class selector */
+/* tag yg memiliki class = */
+.hijau{
+    color: green;
+    font-size: 24px
+}
+
+/* Atribute Selector */
+[id]{
+    color: grey
+}
+
+/* keyword */
+#corn{
+    color: cornflowerblue
+}
+/* 
+    rgb -> red, green, blue 
+    range: 0-255
+*/
+#rgb{
+    color: rgb(255, 125, 30)
+}
+/* 
+    rgba mengatur transparansi
+*/
+#rgba{
+    color: rgba(17, 0, 255, 0)
+}
+
+/* Background */
+/* Semua tag div yg ada di dalam div yg memiliki class box-container */
+div.box-container div{
+    width:500px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: white
+}
+
+.background-color{
+    background-color: purple
+}
+
+.background-image{
+    background-image: url(/files/pictures/Logo-Css-720x720.png);
+    background-size: cover
+}
+/* 
+    cover
+    Ukuran gambar di sesuaikan dengan ukuran dari element
+    jika ratio gambar dan ration element tidak sama
+    menyebabkan sebagian gambar terpotong
+*/
