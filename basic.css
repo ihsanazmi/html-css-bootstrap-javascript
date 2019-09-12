@@ -65,12 +65,78 @@ div.box-container div{
 }
 
 .background-image{
-    background-image: url(/files/pictures/Logo-Css-720x720.png);
-    background-size: cover
-}
+    background-image: url(/files/pictures/logo-css-150x150.png);
+    background-color: green;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* 
+    background-position-x: right;
+    background-position-y: bottom;
+*/
+/* 
+    shorthand background-position menerima dua nilai antara: rop / bottom dan left/ right
+
+    jika tidak hanya memberikan satu nilai, misalkan hanya memberi nilai untuk sumbu-x
+    maka posisi terhadap sumbu-y akan menjadi center
+*/
+
+/* 
+    background-image akan ada diatas background-color
+*/
+
+/* 
+    contain
+    Ukuran gambar diubah sesuai dengan ukuran element
+    bisa menyisakan sebuah space jika rasio gambar dengan element berbeda
+*/
+
 /* 
     cover
     Ukuran gambar di sesuaikan dengan ukuran dari element
     jika ratio gambar dan ration element tidak sama
     menyebabkan sebagian gambar terpotong
 */
+}
+
+.background-size{
+    background-image: url(./files/pictures/Logo-Css-720x720.png);
+    background-size: 500px 300px;
+
+    /* 
+        background-size dapat menerima satu atau dua value
+        jika hanya menerima satu value, contoh:
+            background-size: 500px;
+            maka value tersebut akan digunakan untuk width & height
+        jika menerima dua values, contoh:
+            background-size: 500px 300px;
+            maka value 500px akan digunakan untuk width & 300px untuk height
+    */
+
+}
+
+.back-attach{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.background-attachment-one{
+    background-image: url(./files/pictures/logo-css-300x300.png);
+}
+
+.background-attachment-two{
+    background-image: url(./files/pictures/kitty.jpg);
+}
+
+.background-shorthand{
+    background:url(./files/pictures/logo-css-150x150.png) center center fixed purple;
+}
+
+/* Font */
+#font{
+    background-color: coral;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic; /* normal, oblique */
+    font-weight: bold;
+}
