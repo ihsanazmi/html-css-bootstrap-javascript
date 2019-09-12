@@ -133,10 +133,100 @@ div.box-container div{
 
 /* Font */
 #font{
-    background-color: coral;
+    background-color: #d3c8c8;
+    margin-top: 100px;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-style: italic; /* normal, oblique */
     font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: overline;
+    text-align: center
+}
+
+.google-font{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    background-color: #d3c8c8;
+}
+
+#google-font-one{
+    font-family: Chilanka;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#google-font-two{
+    font-family: Pacifico;
+}
+
+/* Box Model */
+.widht-height{
+    width: 530px;
+    height: 330px;
+    background-color: darkgoldenrod;
+}
+
+.padding{
+    background-color: aquamarine;
+    color: black;
+    padding-left: 13px;
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-bottom: 55px;
+
+    /* 
+        shorthand padding
+
+        padding: 5px: semua sisi element
+        padding: 5px 10px: top & bottom 5px, left & right: 10px
+        padding: 5px 10px 15px: top 5px, left & right 10px, bottom 15px
+        padding: 5px 10px 15px 20px: top - right - bottom - left
+    */
+}
+
+.margin{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    margin: 20px
+     /* 
+        shorthand margin
+
+        margin: 5px: semua sisi element
+        margin: 5px 10px: top & bottom 5px, left & right: 10px
+        margin: 5px 10px 15px: top 5px, left & right 10px, bottom 15px
+        margin: 5px 10px 15px 20px: top - right - bottom - left
+    */
+}
+/* .margin-one{
+   margin-bottom: 20px;
+}
+.margin-two{
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.margin-three{
+    
+} */
+
+.last{
+    width: 70%;
+    /* 80% dari lebar parent */
+    height: 300px;
+    font-family: Chilanka, cursive;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 30px;
+    margin: 2cm auto;
+    border: 3px solid salmon;
+
+    /* border: weight style(solid, dotted, dashed) color */
 }
