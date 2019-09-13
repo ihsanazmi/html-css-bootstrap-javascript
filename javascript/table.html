@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Table</title>
+    
     <style>
         table, th, td{
             border: 2px solid black;
@@ -35,6 +36,8 @@
         }
 
     </style>
+    <!-- Menghubungkan file HTML dengan file javascript -->
+    <script defer src="table.js"> </script>
 </head>
 <body>
     <h1 style="text-align: center">Table</h1>
@@ -50,22 +53,23 @@
                 <div class="wrapper">
                     <form action="">
                         <p>Nama: <input type="text" id="nama"></p>
-                        <p>Umur: <input type="number"></p>
+                        <p>Umur: <input type="number" id="umur"></p>
                         <p>
                             Jenis Kelamin: 
-                            <input type="radio" name="gender">Pria 
-                            <input type="radio" name="gender">Wanita
+                            <input type="radio" name="gender" value="Pria">Pria 
+                            <input type="radio" name="gender" value="Wanita">Wanita
                         </p>
                         <p>
                             Pekerjaan: 
-                            <select name="" id="">
+                            <select id="pekerjaan">
                                 <option value="CEO">CEO</option>
                                 <option value="CTO">CTO</option>
                                 <option value="PM">PM</option>
                             </select>
                         </p>
-                        <p>
-                            <input type="button" value="Tambahkan">
+                        <p style="text-align: center">
+                            <!-- Di Click -> call function inputManusa -->
+                            <input type="button" value="Tambahkan" onclick="inputManusia()" >
                         </p>
                     </form>
                 </div>
@@ -84,11 +88,15 @@
         <tr>
             <td>
                 <table class="table-data">
-                    <th>Nama</th>
-                    <th>Umur</th>
-                    <th>Kelamin</th>
-                    <th>Umur</th>
-                    
+                    <thead>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Kelamin</th>
+                        <th>Umur</th>
+                    </thead>    
+                    <tbody id="list-manusia">
+                        <!-- list akan di render disini -->
+                    </tbody>
                 </table>
             </td>
             <td>
