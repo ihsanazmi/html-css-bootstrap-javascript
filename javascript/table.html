@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        table{
+            margin: 10px auto;
+        }
+
+        th{
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Semua tag yg memiliki wrapper */
+        /* .wrapper{
+
+        } */
+        /* Tag div yg memiliki class wrapper */
+        div.wrapper{
+            margin: 13px;
+        }
+
+        .table-wrap{
+            margin-bottom: 20px;
+        }
+
+        table.table-data{
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Table</h1>
+
+    <table class="table-wrap">
+        <tr>
+            <th>Form Manusia</th>
+            <th>Form Hewan</th>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <form action="">
+                        <p>Nama: <input type="text" id="nama"></p>
+                        <p>Umur: <input type="number"></p>
+                        <p>
+                            Jenis Kelamin: 
+                            <input type="radio" name="gender">Pria 
+                            <input type="radio" name="gender">Wanita
+                        </p>
+                        <p>
+                            Pekerjaan: 
+                            <select name="" id="">
+                                <option value="CEO">CEO</option>
+                                <option value="CTO">CTO</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="button" value="Tambahkan">
+                        </p>
+                    </form>
+                </div>
+            </td>
+            <td>
+                FORM UNTUK ISI DATA HEWAN
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Data Manusia</th>
+            <th>Data Hewan</th>
+        </tr>
+        <tr>
+            <td>
+                <table class="table-data">
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kelamin</th>
+                    <th>Umur</th>
+                    
+                </table>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+
+    <!-- 
+        <tr> : table row , untuk menentukan banyaknya baris
+        <td> : table data, untuk menentukan banyaknya kolom
+        <th> : table head, untuk memberikan style berbeda pada judul kolom
+     -->
+</body>
+</html>
