@@ -75,7 +75,25 @@
                 </div>
             </td>
             <td>
-                FORM UNTUK ISI DATA HEWAN
+                <div class="wrapper">
+                    <form action="">
+                        <p>Nama: <input type="text" name="" id="nama_hewan"></p>
+                        <p>Umur: <input type="text" name="" id="umur_hewan"></p>
+                        <p>
+                            kelamin: 
+                            <input type="radio" name="gender_hewan" value="jantan">Jantan
+                            <input type="radio" name="gender_hewan" value="betina">Betina
+                        </p>
+                        <p>
+                            Status:
+                            <input type="radio" name="status_hewan" value="liar">liar
+                            <input type="radio" name="status_hewan" value="Peliharaan">Peliharaan
+                        </p>
+                        <p style="text-align: center">
+                            <input type="button" value="Tambahkan" onclick="inputHewan()">
+                        </p>
+                    </form>
+                </div>
             </td>
         </tr>
     </table>
@@ -100,7 +118,17 @@
                 </table>
             </td>
             <td>
+                <table class="table-data">
+                    <thead>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Kelamin</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody id="list-hewan">
 
+                    </tbody>
+                </table>
             </td>
         </tr>
     </table>
