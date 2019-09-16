@@ -1,0 +1,10 @@
+.containter{
+    color: red;                             /* Menurunkan */
+    font-size: 30px;                          /* Menurunkan */
+    border: 2px dotted cornflowerblue;      /* Tidak menurunkan */
+    background-color: cadetblue;
+}
+
+.container-child{
+    background-color: brown;
+}
