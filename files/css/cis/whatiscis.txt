@@ -10,6 +10,10 @@ Cascade
 Inheritance
     Suatu style pada suatu element itu dapat diturunkan terhadap element lain yang menjadi sebuah child. Tidak semua style dapat di turunkan.
 
+    Style pada child akan memiliki prioritas yang lebih dari pada parent
+
+    
+
     style umum yang dapat di turunknan antara lain:
         - color
         - font
