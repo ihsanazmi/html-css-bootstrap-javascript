@@ -20,3 +20,6 @@ Inheritance
         - height
 
 Specificity
+    Setiap selector memiliki nilai yang berbeda, yang kan menentukan selector mana yang diterapkan
+
+    di lihat gambar yang di kirim nilai specificity yang paling besar yang akan di terapkan
