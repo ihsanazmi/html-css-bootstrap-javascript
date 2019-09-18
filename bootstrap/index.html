@@ -4,6 +4,8 @@
         <title>BOOTSTRAP 4</title>
         <!-- CDN bootstrap 4 -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./custom.css">
     </head>
     <body>
         <h1 class="text-center my-3">BOOTSTRAP 4</h1>
@@ -68,13 +70,89 @@
             <p class="text-lg-right">Rata kanan pada large atau lebih besar </p>
             <p class="text-xl-right">Rata kanan pada xttra large atau lebih besar</p>
 
-            
+            <p class="d-inline">Paragraf ini merupakan block element</p>
+            <p class="d-inline">Seharusnya ini akan ada dibawah tulisan paragraf sebelumnya</p>
+            <!-- Inline to block -->
+            <span class="d-block">Ini menggunakan tag span</span>
+            <span class="d-block">Maka seharusnya teks ini akan ada di samping teks span sebelumnya</span>
+            <br><hr>
+            <!-- Text -->
+            <p>Text tanpa class bootstrao</p>
+            <p class="text-primary">Text Primary Color</pclass>
+            <p class="text-secondary">Text Secondary Color</p>
+            <p class="text-success">Text Success Color</p>
+            <p class="text-warning">Text Warning Color</p>
+            <p class="text-info">Text Info Color</p>
+            <p class="text-danger">Text Danger Color</p>
+            <br><hr>
+
+            <!-- Background -->
+            <p class="h3 text-white bg-primary">Backround Primary</p>
+            <p class="h3 text-white bg-secondary">Backround Secondary</p>
+            <p class="h3 text-white bg-info">Backround Info</p>
+            <p class="h3 text-white bg-warning">Backround Warning</p>
+            <p class="h3 text-white bg-danger">Backround Danger</p>
+            <p class="h3 text-white bg-dark">Backround Dark</p>
+            <p class="h3 text-white bg-transparent">Backround Transparent</p>
+            <p class="h3 text-white bg-success ">Backround Success</Info>
+            <br><hr>
+            <!-- Space / Box Model -->
+            <!-- 
+                Margin adalah space antar element
+                - margin collapse terjadi hanya pada margin vertikal
+                    margin bottom dari sebuah element bertemu dengan margtion top element lain
+                    maka nilai yang digunakan adalah yang paling besar
+                
+                m: margin
+
+                t: top
+                r: right
+                l: left
+                b: bottom
+
+                y: vertikal
+                x: horizontal
+
+                mr: margin kanan
+                mb: margin bawah
+                my: margin top and bottom
+                mx: margin left and right
+             -->
+
+             <h1 class="bg-info mb-0">Something</h1>
+             <h1 class="bg-info mt-0">Margin Top 0</h1>
+             <h1 class="bg-info mt-1">Margin Top 1</h1>
+             <h1 class="bg-info mt-2">Margin Top 2</h1>
+             <h1 class="bg-info mt-3">Margin Top 3</h1>
+             <h1 class="bg-info mt-4">Margin Top 4</h1>
+             <h1 class="bg-info mt-5">Margin Top 5</h1>
+             <br><hr>
+
+             <p>
+                 <span class="mr-5">Margin Right 5</span>
+                 <span>Text in the middle</span>
+                 <span class="ml-5">Margin left 5</span>
+             </p>
+
+             <p>
+                <span>Text Right</span>
+                <span class="mx-5">Text in the middle</span>
+                <span>Text Left</span>
+            </p>
+
+            <!-- Padding -->
+            <h1 class="bg-warning p-5">Padding 4 sisi dengan p-5</h1>
+
+            <!-- Border -->
+            <div class="bg-info text-white mb-2 p-3 border border-danger border-5">Border Regular</div>
+            <div class="bg-info text-white mb-2 p-3 border-top border-warning border-5">Border Top</div>
+            <div class="bg-info text-white mb-2 p-3 border-right border-danger border-5">Border Right</div>
+            <div class="bg-info text-white mb-2 p-3 border-bottom border-danger border-5">Border Bottom</div>
+            <div class="bg-info text-white mb-2 p-3 border-left border-danger border-5">Border Left</div>
 
         </div>
-
-
-        <div style="height: 800px;"></div>
-        <!-- Link Bootstrap -->
+        <div style="height:800px;"></div>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
