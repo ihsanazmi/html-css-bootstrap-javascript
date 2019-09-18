@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+           div{
+               width: 90%;
+               height: 900px;
+               margin: 0 auto;
+               border: 1px solid slateblue;
+           }
+           /* extra small */
+           @media (max-width:575px){
+               div{
+                   background-color: darksalmon;
+               }
+           }
+           /* small */
+           @media (min-width:576px){
+               div{
+                   background-color: blueviolet;
+               }
+           }
+           /* medium */
+           @media (min-width:768px){
+               div{
+                   background-color: green;
+               }
+           }
+           /* large */
+           @media (min-width:992px){
+               div{
+                   background-color: black;
+               }
+           }
+           /* extra large */
+           @media (min-width:1200px){
+               div{
+                   background-color: rgb(31, 224, 238);
+               }
+           }
+
+        </style>
+    </head>
+    <body>
+        <!--
+            Media query adalah bagaimana kita menentukan sebuah style berdasarkan lebar browser
+          -->
+
+          <div>
+              Media query
+          </div>
+    </body>
+</html>
