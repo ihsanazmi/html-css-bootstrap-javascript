@@ -3,14 +3,43 @@
     <head>
         <title>FLEXBOX</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+            .item{
+                background-color: aquamarine;
+                padding:13px;
+                border: 1px solid black;
+            }
+
+            .flex-container{
+                width: 90%;
+                margin: 0 auto;
+                height: 500px;
+                background-color: bisque;
+            }
+        </style>
     </head>
     <body>
-        <h1>FLEXBOX BOOTSTRAP</h1>
+        <h1 class="text-center my-3">FLEXBOX BOOTSTRAP</h1>
+        <!-- 
+            PARENT CLASS
+            - flex: untuk mengubah parent menjadi flexbox
+            - flex-row (default): child disusun secara horizontal
+            - flex-colum: child di susun secara vertikal
 
-        <div class="container">
-            <div>Flex item one</div>
-            <div>Flex item two</div>
-            <div>Flex item three</div>
+            JUSTIFY CONTENT
+            - justify-conten-start
+            - justify-content-end
+            - justify-content-center
+            - justify-content-around
+            - justify-content-between
+         -->
+         
+
+        <div class="d-flex flex-column align-items-center flex-container">
+            <div class="item w-50">Flex item one</div>
+            <div class="item w-50">Flex item two</div>
+            <div class="item w-50">Flex item three</div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
