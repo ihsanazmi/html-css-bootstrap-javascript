@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+.card-deck .card{
+    min-width: 200px;;
+}
+
+.border-3{
+    border-width: 3px !important;
+}
